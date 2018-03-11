@@ -52,7 +52,7 @@ class ReverseIndex:
 
         matches = self.parse(flat)
         if not matches:
-            return ['No matches found']
+            return []
 
 
         return [self._documents[index] for index in matches]
